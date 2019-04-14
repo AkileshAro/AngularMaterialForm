@@ -1,0 +1,24 @@
+:root{
+    --button-color : rgb(1, 66, 141);
+}
+
+.login, .register{
+    color: white;
+    border: 1px solid var(--button-color);
+    font-size: 18px;
+    background: var(--button-color);
+    margin: 5px;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    outline:none;
+    cursor: pointer;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
