@@ -1,0 +1,121 @@
+::ng-deep :root{
+    --main-font-color :rgba(255, 255, 255, 0.7);
+}
+
+.login-body{
+    box-shadow: 1px 1px 20px rgb(26, 40, 228, 0.1);
+    font-family: 'Montserrat', sans-serif;
+    border-radius:20px; 
+}
+
+.login-display{
+    background: #ececec ;
+    border-radius: 20px 0px 0px 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-display h1{
+    font-weight: 700;
+    color:#9e9e9e;
+    font-size: 52px;
+}
+
+.login-form{
+    background: #9e9e9e;
+    padding: 40px;
+    border-radius: 0px 20px 20px 0px; 
+}
+
+.form-elems{
+    margin: 20px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0 0;
+}
+
+.fields{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--main-font-color);
+    color:var(--main-font-color);
+    width: 26em; 
+    margin: 0 auto;
+    padding: 10px;
+    font-weight: 500;
+    outline: none;
+}
+
+.submits{
+    display: flex;
+    justify-content: center;
+}
+
+.submits a{
+    margin: 10px 15px;
+    text-decoration: none;
+    color:var(--main-font-color);
+    font-weight: 500;
+    border:2px solid var(--main-font-color);
+    padding: 8px 10px;
+    border-radius: 5px;
+    width: 12em;
+    text-align: center;
+}
+
+.fpassword{
+    text-decoration: none;
+    color: var(--main-font-color);
+    font-weight: 500;
+}
+
+
+
+
+
+
+@media(max-width : 992px){
+    .fields{
+        width: 18em; 
+        font-size: 16px;
+    }
+
+    .submits a{
+        width: 6em;
+    }
+
+    .login-display h1{
+        font-size: 42px;
+    }
+}
+
+
+@media(max-width : 768px){
+    .login-form{
+        border-radius: 0px 0px 20px 20px; 
+    }
+
+    .login-display{
+        border-radius: 20px 20px 0px 0px; 
+    }
+
+    .fields{
+        width: 22em; 
+    }
+
+    .submits a{
+        width: 10em;
+        font-size: 16px;
+    }
+
+    .login-display h1{
+        font-size: 42px;
+        padding-top: 8px; 
+    }
+}
